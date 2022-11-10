@@ -6,18 +6,7 @@ export const styles = StyleSheet.create({
       backgroundColor: '#F6F4F5',
       marginVertical: 40,
     },
-    inputContainer: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      margin:20,
-      // backgroundColor: '#A8DADC',
-    },
-    input:{
-      width: '80%',
-      borderBottomWidth: 1,
-      borderBottomColor: '#9A848F',
-      // paddingVertical: 10,
-    },
+    
     listContainer: {
         marginHorizontal:20,
     },
@@ -46,7 +35,38 @@ export const styles = StyleSheet.create({
         fontSize: 14,
         color: '#ffffff',
         paddingHorizontal: 10,	
+    },
+    modalContainer: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      marginTop: 50,
+      paddingVertical: 20,
+    },
+    modalTitle: {
+      fontSize: 18,
+      fontWeight: 'bold',
+      marginBottom: 10,
+    },
+    modalDetailContainer: {
+      paddingVertical: 20,
+      
+    },
+    modalDetailText: {
+      fontSize: 14,
+      color: '#212121',
+      justifyContent: 'center',
+    },
+    selectedTask: {
+      fontSize: 14,
+      color: '#212121',
+      fontWeight: 'bold',
+      paddingVertical: 20,
+    },
+    modalButtonContainer: {
+      width: '70%',
+      flexDirection: 'row',
+      justifyContent: 'space-around',
+      marginHorizontal: 20,
     }
-
   });
   
