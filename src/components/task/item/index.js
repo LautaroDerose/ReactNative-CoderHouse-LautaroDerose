@@ -6,6 +6,7 @@ const TaskItem = ({ item, onHandleSelected }) => {
     return (
         <TouchableOpacity style={styles.listItemContainer} onPress={() => onHandleSelected(item)} >
         <Text style={styles.listItem} >{item.value}</Text>
+                
       </TouchableOpacity>
     )
 }

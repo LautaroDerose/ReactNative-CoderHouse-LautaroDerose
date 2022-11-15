@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, FlatList, Modal, TouchableOpacity  } from 'react-native';
 import { styles	} from './styles';
 import { AddItem } from './components/index'
+import { ListItem } from './components/index'
 import { TaskItem } from './components/index'
 import { ModalItem } from './components/index'
 
@@ -16,14 +17,9 @@ export default function App() {
   
   const onHandleTask = () => {
     setTaskList((prevTaskList) =>[
-      ...prevTaskList, {id: Math.random().toString(), value: task}
+       {id: Math.random().toString(), value: task}, ...prevTaskList
     ]);
     setTask('');
-  }
-
-  const getRandomBackgroundColor = () => {
-    const colors = [ 'blue', 'red', 'green'];
-    return colors[Math.floor(Math.random() * colors.length)];
   }
 
   const onHandleSelected = (item) => { 
@@ -45,9 +41,13 @@ export default function App() {
   }
 
   const onHandleChange = (text) => setTask(text);
-
+  
+  console.log(taskList.value);
+  console.log(taskList);
+  console.log(TaskItem.value);
 
   return (
+
     <View style={styles.container}>
       
       
@@ -55,8 +55,8 @@ export default function App() {
         <Text style={styles.listTitle}>Todo List</Text>    
         <AddItem task={task} onHandleTask={onHandleTask} onHandleChange={onHandleChange} />
       </View>
-      <FlatList
-        style={styles.listContainer}
+
+      <ListItem
         data={taskList}
         renderItem={renderItem}
         keyExtractor={item => item.id}
@@ -69,4 +69,5 @@ export default function App() {
       />
     </View>
   );
+  
 }

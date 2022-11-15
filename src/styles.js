@@ -6,10 +6,9 @@ export const styles = StyleSheet.create({
       backgroundColor: '#F6F4F5',
       marginVertical: 40,
     },
-    
     listContainer: {
-        marginHorizontal:20,
-    },
+      marginHorizontal:20,
+  },
     listTitle: {
         fontSize: 18,
         fontWeight:'bold',
