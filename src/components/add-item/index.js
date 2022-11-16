@@ -1,6 +1,7 @@
 import React from "react";
 import { View, TextInput, Button } from 'react-native';
 import { styles } from "./styles";
+import colors from "../../constants/colors";
 
 const AddItem = ({ task, onHandleTask, onHandleChange }) => {
     return (
@@ -14,7 +15,7 @@ const AddItem = ({ task, onHandleTask, onHandleChange }) => {
         <Button 
         disabled={!task}
         title='Add' 
-        color='#9A848F' 
+        color= {colors.vioYama2}
         onPress={onHandleTask} />
         </View>
     )

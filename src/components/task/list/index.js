@@ -1,6 +1,6 @@
 import { FlatList, StyleSheet } from "react-native";
 
-const ListItem = (data, renderItem, keyExtractor) => {
+const ListItem = ({data, renderItem, keyExtractor}) => {
     return (
         <FlatList
             style={styles.listContainer}

@@ -1,9 +1,15 @@
 import { StyleSheet } from 'react-native';
+import colors from "../../../constants/colors";
 
 export const styles = StyleSheet.create({
+    main: {
+        justifyContent:'space-between',
+        
+    },
     listItemContainer: {
-        paddingVertical: 20,
-        backgroundColor: '#9A848F',
+        flexDirection:'row',
+        paddingVertical: 10,
+        backgroundColor: colors.vioYama3,
         borderRadius: 5,
         shadowColor: "#000",
         shadowOffset: {
@@ -13,7 +19,8 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
         elevation: 5,
-        justifyContent: 'center',
+        justifyContent: 'space-between',
+        alignItems:'center',
         marginVertical: 5,
     },
     listItem: {
@@ -21,4 +28,10 @@ export const styles = StyleSheet.create({
         color: '#ffffff',
         paddingHorizontal: 10,	
     },
+    iconContainer: {
+        flexDirection:'row',
+    },
+    checkboxList: {
+        paddingHorizontal: 10,
+    }
 })

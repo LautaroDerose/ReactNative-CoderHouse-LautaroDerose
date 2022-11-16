@@ -13,7 +13,19 @@ export default function App() {
   const [taskList, setTaskList ] = useState([]);
   const [modalVisible, setModalVisible ] = useState(false);
   const [selectedTask, setSelectedTask ] = useState(null);
+  // const [ Check, setCheck ] = useState(null);
+  // const [timesPressed, setTimesPressed] = useState(false);
+
+  // const onHandleTimesPressed = (timesPressed, item) => {
+  //   setSelectedTask(item);
+  //   setTimesPressed(!timesPressed);
+    
+  // }
+  // const [ Checked, setChecked ] = useState = (false);
   
+  // const onHandleCheck = () => {
+  //   setChecked(!Checked)
+  // }
   
   const onHandleTask = () => {
     setTaskList((prevTaskList) =>[
@@ -26,7 +38,12 @@ export default function App() {
     setSelectedTask(item);
     setModalVisible(!modalVisible);
   }
-
+  
+  // const onHandleCheck = (item) => { 
+  //   setSelectedTask(item);
+  //   setCheck(!Check)
+  // }
+  
   const renderItem = ({item}) => (
    <TaskItem item={item} onHandleSelected={onHandleSelected} />
   )
@@ -67,6 +84,9 @@ export default function App() {
         selectedTask = {selectedTask}
         onHandleCancel ={onHandleCancel}
       />
+
+      
+
     </View>
   );
   
