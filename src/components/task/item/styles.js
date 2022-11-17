@@ -3,8 +3,7 @@ import colors from "../../../constants/colors";
 
 export const styles = StyleSheet.create({
     main: {
-        justifyContent:'space-between',
-        
+        justifyContent:'space-between', 
     },
     listItemContainer: {
         flexDirection:'row',
